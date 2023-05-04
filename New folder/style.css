@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #111;
+    font-family: initial;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background: black;
+    opacity: 100%;
+    position: fixed;
+}
+#icon_label{
+    width: 25px;
+    height: 25px;
+    background:none;
+    position: ;
+    float: right;
+    display: none;
+}
+ul{
+    float: right;
+    background:;
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: blue;
+    opacity: ;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 7px;
+}
+ul li:hover{
+    background: linear-gradient(blue,green,skyblue);
+    box-shadow: 5px 4px 4px black;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#input_icon{
+    display: none;
+
+}
+.sp1,.sp2,.sp3{
+    background: #fff;
+    width: 100%;
+    height: 3px;
+    margin-top: 4px;
+
+}
+
+
+@media(max-width:800px){
+    ul{
+        background: #111;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        margin-top: 50px;
+        transform: translateY(100vh);
+        transition: transform 300ms ease-in-out;
+        overflow-x: hidden;
+    }
+    ul li{
+        display: block;
+        background: white;
+        width: 100%;
+        height: 35px;
+        margin-top: 10px;
+    }
+    #input_icon:checked ~ ul{
+        transform: translateY(0vh);
+    }
+    ul li a{
+        text-decoration: none;
+        color: #111;
+    }
+    #icon_label{
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+    }
+}
+
+
+
+
+/*Home page*/
+.baner_home_image{
+    width: 100%;
+    height: 80%;
+    opacity: 100%;
+
+}
+#contact{
+    width: 100%;
+    height: max-content;
+    opacity: 100%;
+    border: 1px solid blue;
+}
+#contact form{
+    background: #111;
+    border: 1px solid #fff;
+    width: fit-content;
+    height: min-content;
+    padding: 5px;
+    color: white
+}
+#contact form input{
+    background: white;
+    width: 300px;
+    height: 25px
+}
+#contact form button{
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(red,green,blue);
+    margin-top: 10px;
+    margin-left: 220px;
+    cursor: pointer;
+}
